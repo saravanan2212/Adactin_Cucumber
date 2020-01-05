@@ -37,8 +37,8 @@ public class AdactinStep extends Base {
 		//selectIndex(p1.getRoomNos().get(0), string4);
 		//fill(p1.getDateIn().get(0), string5);
 		//fill(p1.getDateOut().get(0), string6);
-		//selectIndex(p1.getAdult().get(0), string7);
-		//selectIndex(p1.getChild().get(0), string8);
+		selectIndex(p1.getAdult().get(0), string7);
+		selectIndex(p1.getChild().get(0), string8);
 		btnClick(p1.getSubmit().get(0));
 	}
 
