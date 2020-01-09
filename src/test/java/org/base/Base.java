@@ -4,14 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
 public class Base {
 	public static  WebDriver driver;
-	public static void getDriver() {
+	public static void getDriver() throws InterruptedException {
+		Thread.sleep(1000);
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\GT Adayar\\eclipse-workspace\\Adactin\\driver\\chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-	}
+		driver.manage().window().maximize();	}
 	public static void loadUrl(String s) {
 		driver.get(s);
 	}
